@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-size: 14px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	background-color: hsl(30, 38%, 92%);
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin: 20vh 30vh;
+	flex-direction: column;
+}
+
+ul {
+	list-style-type: none;
+}
+button,
+li {
+	font-family: inherit;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 0.75rem;
+	color: hsl(228, 12%, 48%);
+	letter-spacing: 3px;
+}
+
+p {
+	color: hsl(228, 12%, 48%);
+	font-size: 0.65rem;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 500px;
+	justify-content: center;
+}
+
+.container .btn {
+	border: 0;
+	width: 100%;
+	padding: 0.6rem 2rem;
+	background-color: hsl(158, 36%, 37%);
+	font-weight: 700;
+	color: white;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	font-size: 0.75rem;
+	transition: 5sec;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+.container .btn:hover {
+	background-color: hsl(157, 35%, 19%);
+}
+.container .btn img {
+	margin-right: 0.5rem;
+}
+
+.container div:first-child img {
+	border-radius: 0.5rem 0 0 0.5rem;
+	display: block;
+}
+
+.container div:last-child {
+	background-color: hsl(0, 0%, 100%);
+	padding: 1.5rem;
+	border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.container p {
+	margin-bottom: 1rem;
+	line-height: 1.2rem;
+}
+
+.container ul {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.container li:first-child {
+	font-size: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+.container li:nth-child(2) {
+	font-size: 0.65rem;
+	text-decoration: line-through;
+	color: hsl(228, 12%, 48%);
+}
+
+.title {
+	font-family: "Fraunces", serif;
+	font-weight: 700;
+	color: hsl(212, 21%, 14%);
+	margin: 1rem 0 1rem 0;
+	font-size: 1.5rem;
+}
+
+.price {
+	font-family: "Fraunces", serif;
+	font-weight: 700;
+	color: hsl(158, 36%, 37%);
+}
+
+.attribution {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 4rem;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 770px) {
+	body {
+		margin: 4vh 6vh;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-width: 250px;
+	}
+
+	.container div:first-child img {
+		border-radius: 0.5rem 0.5rem 0 0;
+	}
+
+	.container div:last-child {
+		background-color: hsl(0, 0%, 100%);
+		padding: 1.5rem;
+		border-radius: 0 0 0.5rem 0.5rem;
+	}
+}
